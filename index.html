@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon-Left Responsive Menu</title>
+    <link rel="stylesheet" href="scripts/menu.css">
+    <link rel="stylesheet" href="scripts/style.css">
+</head>
+<body>
+    <header class="navbar-container">
+        <nav class="navbar">
+            
+            <div class="navbar-brand">
+                <a href="#home"><img id="logo" src="img/icon.jpg"></a> 
+                </div>
+
+            <input type="checkbox" id="menu-toggle">
+            
+            <label for="menu-toggle" class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                
+                <li class="dropdown" id="csharp-dropdown">
+                    <a href="#csharp">C#</a>
+                    <ul class="submenu">
+                        <li><a href="#csharp-console">Console Apps</a></li>
+                        <li><a href="#csharp-desktop">Desktop Apps</a></li>
+                        <li><a href="#csharp-web">Web Apps</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+
+                <li class="dropdown" id="javascript-dropdown">
+                    <a href="#javascript">JavaScript</a>
+                    <ul class="submenu">
+                        <li><a href="#js-frontend">Front End</a></li>
+                        <li><a href="#js-backend">Back End</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
