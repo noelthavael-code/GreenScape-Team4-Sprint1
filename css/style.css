@@ -3,7 +3,27 @@ body{
     font-family:'Courier New', Courier, monospace;
     font-size: 14pt;
 }
+
+
+
 #logo{
-    height: 120px;
-    background-color: darkslategrey;
+    height: 140px;
+    display:block;
+    margin-right:auto;
+    
+}
+
+p{
+    font-size: 14px;
+    text-align: left;
+    
+}
+
+.profile-img{
+    display: block;
+    clear: none;
+    margin-top: 10px;
+    border: 2px solid black;
+    padding: 5px;
+    width: 410px;
 }
