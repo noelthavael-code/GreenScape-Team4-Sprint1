@@ -10,11 +10,20 @@
 
 /* --- Navigation Container --- */
 .navbar-container {
-    background-color: #104249;
+    background-color: #bae7b9;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
+    display: flex;
+    /* Main Flexbox setting: Icon (left) and Links (right) */
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the navbar content */
+}
+.footer-style {
     display: flex;
     /* Main Flexbox setting: Icon (left) and Links (right) */
     justify-content: space-between; 
@@ -47,7 +56,7 @@
 .nav-links a {
     display: block;
     padding: 15px 20px;
-    color: white;
+    color: #000;
     transition: background-color 0.3s;
 }
 
