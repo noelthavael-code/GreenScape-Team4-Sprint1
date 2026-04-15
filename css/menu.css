@@ -16,12 +16,12 @@
 
 .navbar {
     display: flex;
-    /* Main Flexbox setting: Icon (left) and Links (right) */
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    max-width: 1200px;
-    margin: 0 auto; /* Center the navbar content */
+    /* Remove or comment these two lines: */
+
+
 }
 
 /* --- Left Side: Brand/Icon --- */
@@ -38,6 +38,7 @@
     display: flex;
     justify-content: flex-end; /* Align links to the right */
     align-items: center;
+     max-width: 900px;
 }
 
 .nav-links > li {
