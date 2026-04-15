@@ -1,0 +1,52 @@
+.site-footer {
+    flex-shrink: 0; 
+    background-color: #bae7b9; 
+    padding: 40px 20px;
+    font-family: sans-serif;
+    margin-top: auto;
+    /* margin-top: auto; is a great backup, but flex:1 on main does the heavy lifting */
+}
+ 
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+ 
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+ 
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ 
+.footer-links li {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+ 
+.footer-links i {
+    margin-right: 10px;
+    width: 15px;
+    text-align: center;
+}
+ 
+.footer-links a {
+    text-decoration: none;
+    color: inherit;
+}
+ 
+.footer-links a:hover {
+    text-decoration: underline;
+}

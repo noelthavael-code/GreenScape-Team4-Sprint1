@@ -10,7 +10,7 @@
 
 /* --- Navigation Container --- */
 .navbar-container {
-    background-color: #104249;
+    background-color: #bae7b9;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -47,7 +47,7 @@
 .nav-links a {
     display: block;
     padding: 15px 20px;
-    color: white;
+    color: #000;
     transition: background-color 0.3s;
 }
 
