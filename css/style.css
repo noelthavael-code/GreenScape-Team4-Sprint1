@@ -1,7 +1,9 @@
 body{
-    background-color: #86ad90;
+    background-color: #349e4f;
     font-family:'Courier New', Courier, monospace;
     font-size: 14pt;
+    float: right;
+
 }
 #logo1 {
     height: 80px;
@@ -9,4 +11,14 @@ body{
 }
 #logo2{
     height: 120px;
+}
+.title1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    text-decoration: underline overline;
+}
+#main-image{
+    display: block;
+
 }
