@@ -3,6 +3,10 @@ body{
     font-family:'Courier New', Courier, monospace;
     font-size: 14pt;
 }
-#logo{
+#logo1{
     height: 50px;
+    margin-right:700px;
+}
+#logo2{
+    height: 120px;
 }

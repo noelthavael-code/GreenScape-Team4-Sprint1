@@ -4,11 +4,12 @@
     padding: 40px 20px;
     font-family: sans-serif;
     margin-top: auto;
+    margin-top: 2000px;
     /* margin-top: auto; is a great backup, but flex:1 on main does the heavy lifting */
 }
  
 .footer-container {
-    max-width: 1200px;
+    max-width: 2200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -49,4 +50,14 @@
  
 .footer-links a:hover {
     text-decoration: underline;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: #1f5030;
+}
+
+.footer-column li{
+    font-size :1.1rem;
 }
