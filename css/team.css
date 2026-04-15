@@ -1,0 +1,47 @@
+/* This is the container for ONE person (Text Box + Image) */
+/* 1. THE CONTAINER (Forces side-by-side) */
+.profile-section {
+    display: flex;            /* MAGIC: Puts items in a row */
+    align-items: flex-start;  /* Aligns both items to the top */
+    gap: 30px;                /* Creates even space between text and image */
+    margin-bottom: 40px;      /* Gap between each person's bio */
+    width: 100%;              /* Uses available screen space */
+    max-width: 1200px;        /* Limits width on large screens */
+    margin-left: auto;        /* Centers the whole section on the page */
+    margin-right: auto;
+}
+
+/* 2. THE TEXT BOX (Targets the left side) */
+.profile-text {
+    flex: 1;                  /* Tells text to take all remaining space */
+    border: 3px solid #004d00; /* Dark Green Border */
+    padding: 25px;            /* Internal space so text doesn't touch the box */
+    background-color: #f9fff9; /* Light green tint inside the box */
+    box-sizing: border-box;    /* Ensures padding doesn't break width */
+}
+
+/* Fixes headers inside the green box */
+.profile-text h3 {
+    margin-top: 0;
+    color: #004d00;
+}
+
+/* 3. THE IMAGE (Targets the right side) */
+.profile-img {
+    width: 400px;             /* Your current image width */
+    height: auto;             /* Keeps the aspect ratio correct */
+    flex-shrink: 0;           /* Prevents text from squishing the image */
+    border-radius: 4px;       /* Subtle rounded corners */
+}
+
+/* Optional Responsive Design (Stacks on small phones) */
+@media (max-width: 800px) {
+    .profile-section {
+        flex-direction: column; /* Stacks image UNDER text on phones */
+        align-items: center;
+    }
+    .profile-img {
+        width: 100%;          /* Image uses full phone width */
+        max-width: 400px;
+    }
+}
