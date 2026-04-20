@@ -1,8 +1,42 @@
 body{
-    background-color: #CCCCCC;
+    background-color: #e2e2e2;
     font-family:'Courier New', Courier, monospace;
     font-size: 14pt;
 }
 #logo{
     height: 50px;
+}
+.text-overlay{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    background-color: white;
+}
+div.flex-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 10px;
+    gap: 5px;
+}
+.divimgs{
+    border: 2px solid #104249;
+    border-radius: 15px;
+    box-shadow: 20px 20px 50px 15px grey;
+}
+div.textbox{
+    border-radius: 15px;
+    background-color: white;
+    padding: 15px;
+}
+.flex-container img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.button{
+    background-color: #25b425;
+    border-radius: 15px;
 }
