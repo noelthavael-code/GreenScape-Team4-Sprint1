@@ -27,39 +27,32 @@ body{
     animation: textAppearNextToImage 1s ease-out;
     animation-fill-mode: forwards;
 }
-.mainTextArea1{
+.mainTextArea1 {
+    position: relative;
     max-width: 1200px;
     max-height: 1000px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 60px;
     background-color: #0e8a56;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-weight: 1000;
+    animation: textAppearNextToImage 0.6s ease forwards;
 }
 
 @keyframes textAppearNextToImage {
-    from {
+    0% {
         opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    0%{
-        opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(20px) scale(1.2);
         width:2000px;
         height:1200px;
-        float:left;
+        float:left
     }
-    100%{
+    100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
         width:1200px;
         height:800px;
         float:left;
     }
-    
 }
