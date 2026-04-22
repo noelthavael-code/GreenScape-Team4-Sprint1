@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/aeration-seeding.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+</head>
+<body>
+     <header class="navbar-container">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="#home"><img id="logo1" src="img/team4-green2.png"></a>
+                </div>
+ 
+            <input type="checkbox" id="menu-toggle">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+               
+                <li class="dropdown" id="csharp-dropdown">
+                    <a href="#csharp">service Areas</a>
+                    <ul class="submenu">
+                        <li><a href="#csharp-console">Console Apps</a></li>
+                        <li><a href="#csharp-desktop">Desktop Apps</a></li>
+                        <li><a href="#csharp-web">Web Apps</a></li>
+                    </ul>
+                </li>
+               
+                <li><a href="#html">Reviews</a></li>
+                <li><a href="#css">Teams</a></li>
+ 
+                <li class="dropdown" id="javascript-dropdown">
+                    <a href="#javascript">Contact Us Form</a>
+                    <ul class="submenu">
+                        <li><a href="#js-frontend">Front End</a></li>
+                        <li><a href="#js-backend">Back End</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Hydroseeding</h1>
+                     <div class="book-box">
+                        <button class="btn-primary">Book</button>
+                     </div>
+
+                      <div class="textbox">
+                          <p>Hydroseeding offers a rapid and efficient way to establish new grass growth while providing erosion control. This process involves spraying a slurry of seed and mulch, promoting quick germination and soil stabilization.</p>
+                      </div>
+
+                     <div class="textbox">
+                        <p>Pricing is based on the size and specific requirements of your lawn. Get in touch with us to learn more about our hydroseeding services.</p>
+                    </div>
+                </div>
+            
+                <div class="hero-image">
+                      <img id="pageLogo" src="img/hydroseeding-main.jpg" alt="Hydroseeding process">
+                  </div>
+                </section>
+
+                  <div class="textbox">
+                     <h3>What is Soil Aeration?</h3>
+                     <p>Soil aeration is the process of improving the exchange of gases between the atmosphere and the soil. Think of it as allowing the earth to "breathe."</p>
+                    </div>
+
+                 <div class="textbox">
+                     <h3>Why is Soil Aeration Important?</h3>
+                      <ul>
+                       <li><strong>Relieves Soil Compaction:</strong> This is the primary goal.<br> By loosening the soil, 
+                        air, water, and nutrients can penetrate deeper to the root zone.</li>
+                       <li><strong>Enhances Gas Exchange:</strong> It ensures a sufficient
+                        supply of oxygen (O2) for root respiration <br>and helps in the removal 
+                        of excess carbon dioxide (CO2), which can become toxic.</li>
+                       <li><strong>Improves Nutrient Uptake:</strong> Makes fertilizers more accessible.</li>
+                        </ul>
+                    </div>
+        </section>
+
+        <section class="related-services">
+            <h2>Related services</h2>
+            <div class="card-grid">
+                <div class="card" style="background-image: url('img/aeration.jpg');">
+                    <div class="card-overlay">
+                        <h3>Aeration</h3>
+                        <button class="btn-primary">Book</button>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('img/overseeding.jpg');">
+                    <div class="card-overlay">
+                        <h3>Overseeding</h3>
+                        <button class="btn-primary">Book</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="contact-footer">
+        <div class="contact-card">
+            <h2>Contact Us Today</h2>
+            <p>Reach out now to discuss your lawn care needs!</p>
+            <form class="contact-form">
+                <div class="form-main">
+                    <div class="form-group">
+                        <label>Tell us about your request</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="form-inputs">
+                        <input type="text" placeholder="Your name">
+                        <input type="email" placeholder="Your email">
+                        <input type="tel" placeholder="Your phone number">
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <label><input type="checkbox"> I agree to the Terms & Conditions</label>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
