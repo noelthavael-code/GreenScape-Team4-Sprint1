@@ -59,10 +59,16 @@ body {
     flex: 1;
     font-size: 24px;
     background-color: #47886a;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-weight: 1000;
     text-align: center;
+    color: 0;
+    margin-right:1500px;
+}
+a{
+    color: #000;
+    text-decoration: none;
 }
 
 @media (max-width: 900px) {
