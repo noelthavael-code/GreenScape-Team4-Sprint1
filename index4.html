@@ -15,12 +15,17 @@
                 <a href="#home"><img id="logo1" src="img/team4-green2.png"></a> 
                 </div>
 
-            <input type="checkbox" id="menu-toggle">
-            <ul class="nav-links">
+                <input type="checkbox" id="menu-toggle">
+                <label class="hamburger" for="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+                <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 
                 <li class="dropdown" id="csharp-dropdown">
-                    <p>Services</p>
+                    <label class="dropdown-toggle">Services ▾</label>
                     <ul class="submenu">
                         <li><a href="aeration-seeding.html">Aeration & Seeding</a></li>
                         <li><a href="landscape_maintenance.html">Landscape Maintenance</a></li>
@@ -61,16 +66,16 @@
             <p class ="title1">Our Services</p>
     <div class="Box1">
         <div id ="service1">
-            <p id ="sectionTitle"> Aeration & Seeding</p>
-            <a href ="aeration-seeding.html"> Aeration</a><br>
+            <p class="sectionTitle">Aeration & Seeding</p>
+            <a href ="aeration-seeding.html">Aeration</a><br>
             <p>Helping roots grow deeper, water absorb better, and impurities break down.</p>
-            <a href ="aeration-seeding.html"> Overseeding</a>
+            <a href ="aeration-seeding.html">Overseeding</a>
             <p>Spreading new grass seed over an existing lawn to fill in thin or bare spots, improve density, and refresh the overall turf without tearing it up.</p>
             <a href = "aeration-seeding.html">Hydroseeding</a>
             <p>Spraying a liquid mixture of grass seed, water, fertilizer, and wood or paper mulch onto prepared soil.</p>
         </div>
         <div id="service2">
-            <p id ="sectionTitle"> Landscape Maintenance</p>
+            <p class="sectionTitle">Landscape Maintenance</p>
             <a href ="landscape_maintenance.html">Fertilizer Application</a><br>
             <p>Adding nutrients to soil to support healthy grass growth. Applied in liquid or granular form, fertilizers replenish what soil lacks and help lawns stay green, strong, and resistant to stress throughout the season.</p>
             <a href ="landscape_maintenance.html">Lawn Care</a>
@@ -79,7 +84,7 @@
             <p>preventing and eliminating unwanted plants that compete with grass for nutrients, water, and sunlight.</p>
         </div>
         <div id="service3">
-            <p id ="sectionTitle"> Treatments</p>
+            <p class="sectionTitle">Treatments</p>
             <a href ="treatments.html">Mosquito Control</a><br>
             <p>Applying treatments to reduce mosquito populations and minimize the risk of mosquito-borne diseases.</p>
             <a href ="treatments.html">Grub Control</a>
@@ -127,6 +132,6 @@
           </div>
         </div>
     </footer>
-    <script src="scripts/script.js"></script>
+    <script src="javascript/responsivemenu.js"></script>
 </body>
 </html>
