@@ -29,7 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Close the entire menu when any link (main or sub) is clicked
     document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
+        link.addEventListener('click', (e) => {
+            const isDropdownToggle = link.closest('.dropdown') !== null;
+
+            // On mobile, clicking the dropdown parent should only open/close the submenu,
+            // not close the whole menu immediately.
+            if (window.innerWidth <= 768 && isDropdownToggle) {
+                return;
+            }
+
             // Uncheck the hamburger menu toggle to close the whole menu
             menuToggle.checked = false;
             
@@ -38,5 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 dropdown.classList.remove('active');
             });
         });
+    });
+});
+document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function () {
+        const parent = this.closest('.dropdown');
+        parent.classList.toggle('active');
     });
 });
