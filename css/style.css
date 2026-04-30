@@ -54,6 +54,8 @@ p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
+    overflow: hidden;
+    z-index: 1;
 }
 
 #main-image {
@@ -83,6 +85,8 @@ p {
     max-width: 1200px;
     margin: 0 auto 60px;
     padding: 0 20px 40px;
+    position: relative;
+    z-index: 2;
 }
 
 #service1,

@@ -1,0 +1,204 @@
+/* === animations.css === */
+
+/* Fade In Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 12px 24px rgba(18, 59, 32, 0.08);
+    }
+    50% {
+        box-shadow: 0 20px 35px rgba(18, 59, 32, 0.15);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Animation Classes */
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in-down {
+    animation: fadeInDown 0.8s ease-out forwards;
+}
+
+.animate-slide-in-left {
+    animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.animate-slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
+}
+
+.animate-scale-up {
+    animation: scaleUp 0.8s ease-out forwards;
+}
+
+.animate-pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.animate-bounce-in {
+    animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+    opacity: 0;
+}
+
+/* Stagger delays for sequential animations */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+
+/* Hero Section Animations */
+.title1 {
+    animation: fadeInDown 0.9s ease-out;
+}
+
+.content-row {
+    animation: fadeIn 1s ease-out;
+}
+
+#main-image {
+    animation: slideInLeft 0.9s ease-out;
+    will-change: transform;
+}
+
+.mainTextArea1 {
+    animation: slideInRight 0.9s ease-out;
+}
+
+/* Service Cards - Scroll-triggered (no initial animation) */
+#service1,
+#service2,
+#service3 {
+    opacity: 0;
+    will-change: opacity, transform;
+}
+
+#service1.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+#service2.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+#service3.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+
+/* Smooth transitions on all interactive elements */
+button, a, .nav-links a, .dropdown-toggle, .footer-links a {
+    transition: all 0.3s ease;
+}
+
+/* Service card hover effect - smooth lift only */
+#service1:hover, #service2:hover, #service3:hover {
+    box-shadow: 0 20px 35px rgba(18, 59, 32, 0.15) !important;
+    transform: translateY(-8px) !important;
+}
+
