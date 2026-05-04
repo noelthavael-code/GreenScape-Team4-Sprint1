@@ -1,68 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #587a58;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /* Cleaner font */
+    color: #1a1a1a;
+    line-height: 1.6;
+    padding: 20px;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1px;
+    align-items: center; /* This centers the boxes horizontally */
+    gap: 30px;           /* This creates uniform vertical space between the boxes */
+    width: 100%;
+    max-width: 1800px;   /* Adjusted for better readability */
+    margin: 0 auto;      /* Centers the entire container on the page */
 }
 
-#pageLogo {
-    display: block;
-    margin: 0 auto;
-    height: 400px;
-    border: green 30px groove;
-    
-    animation: fadeInSlide 3s ease-out forwards;
-    border-radius: 15px;
-}
-
-#pageLogo img {
-    border-radius: inherit;
-}
-
-.textbox{
-    font-size: 16px;
-    border:  20px groove black;
-    color:black;
+/* 4. Responsive Textbox */
+.textbox {
+    font-size: 1.1rem;
+    border: 2px solid #000;
     background-color: #bae7b9;
-    margin: 20px auto;
-    max-width: 2050px;
+    padding: 30px;
+    width: 95%;
+    max-width: 1000px;
+    
+    /* Layout fix */
     display: flex;
-    flex-direction: row;
-    animation: fadeInSlide 1s ease-out forwards;
-    animation-delay: 0.3s; /* This creates a slight delay for the text */
+    flex-direction: row; /* Changed back to row to match your screenshot layout */
+    align-items: flex-start; 
+    gap: 20px;
+    
     opacity: 0;
     border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInSlide 1s ease-out forwards;
+    animation-delay: 0.3s;
     
+    /* Ensures the box itself is centered if container alignment fails */
+    margin-left: auto;
+    margin-right: auto;
+}
 
+/* 3. Responsive Logo */
+#pageLogo {
+    display: block;
+    max-width: 100%; /* Ensures it never overflows the screen */
+    height: auto;     /* Maintains aspect ratio */
+    max-height: 300px;
+    border: #2d4f2d 5px solid;
+    border-radius: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: fadeInSlide 1.5s ease-out forwards; /* Sped up for better UX */
+    cursor: pointer;
+}
+
+#pageLogo:hover {
+    transform: scale(1.02);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 4. Responsive Textbox */
+.textbox {
+    font-size: 1.1rem;
+    border: 2px solid #000; /* Thinner border looks "cleaner" */
+    background-color: #bae7b9;
+    padding: 30px;
+    width: 95%;          /* Takes up most of the screen on mobile */
+    max-width: 1000px;    /* Prevents lines from getting too long to read on desktop */
+    
+    /* Layout fix */
+    display: flex;
+    flex-direction: column; /* Stacked by default for mobile */
+    gap: 20px;
+    
+    opacity: 0;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInSlide 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+/* 5. Desktop Adjustment */
+@media (min-width: 768px) {
+    .textbox {
+        flex-direction: row; /* Side-by-side only on larger screens */
+    }
 }
 
 .textbox:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-#pageLogo:hover {
-    transform:scale(1.02);
-    background-color: #f8f8f8;
-    cursor: pointer;
-}
-
-
-body {
-    background-color: rgb(88, 122, 88);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 2.2rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
 }
 
+/* 6. Smooth Animation */
 @keyframes fadeInSlide {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* 1. The main footer background (stretches full width) */
+.site-footer {
+    background-color: #e2e8d0; 
+    width: 100%;
+    display: flex;
+    justify-content: center; /* This centers the container inside */
+    padding: 40px 0;
+    margin-top: 60px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+/* 2. The inner container (controls the width of your text columns) */
+.footer-container {
+    width: 90%;
+    max-width: 1200px; /* Limits how far the columns spread on huge monitors */
+    display: flex;
+    justify-content: space-between; /* Pushes columns apart to fill the 1200px */
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* 3. Column styling to ensure they take up equal space */
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* 4. Reset list styles so they don't have weird indents */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+/* 5. Mobile Fix: Stacks columns when the screen is too narrow */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-column {
+        margin-bottom: 30px;
     }
 }
