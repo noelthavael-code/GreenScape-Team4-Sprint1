@@ -120,6 +120,8 @@ input { padding: 12px; background: #eee; border: none; }
     cursor: pointer;
 }
 
+
+
 /* General Layout */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -167,11 +169,11 @@ body {
 
 /* Typography Styling */
 .area-header {
-    font-size: 2rem;
+    font-size: 1.65rem;
     font-weight: bold;
     color: #000;
     margin-bottom: 15px;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px;
     padding-bottom: 5px;
 }
 
@@ -218,4 +220,40 @@ body {
     .flex-container:nth-of-type(even) {
         flex-direction: column;
     }
+}
+
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to the main content containers */
+.flex-container, .section-header {
+    opacity: 0; /* Starts invisible */
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Stagger the timing so the header appears first, then the rows */
+.section-header {
+    animation-delay: 0.1s;
+}
+
+.flex-container:nth-of-type(1) {
+    animation-delay: 0.3s;
+}
+
+.flex-container:nth-of-type(2) {
+    animation-delay: 0.5s;
+}
+
+.flex-container:nth-of-type(3) {
+    animation-delay: 0.7s;
 }

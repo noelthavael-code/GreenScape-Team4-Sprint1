@@ -4,7 +4,6 @@
     padding: 40px 20px;
     font-family: sans-serif;
     margin-top: auto;
-    margin-top: 2000px;
     /* margin-top: auto; is a great backup, but flex:1 on main does the heavy lifting */
 }
  
