@@ -57,6 +57,10 @@ p {
     overflow: hidden;
     z-index: 1;
 }
+.button{
+    background-color: #47916d;
+    border-radius: 15px;
+}
 
 #main-image {
     width: 100%;
