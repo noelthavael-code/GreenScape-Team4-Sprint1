@@ -1,0 +1,38 @@
+/* Add this to your existing CSS or a new team.css file */
+
+.flex-container {
+    align-items: center; /* Centers text vertically against the profile images */
+}
+
+.area-header {
+    color: #2e7d32;
+    border-bottom: 2px solid #558b2f;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Ensure the images have a consistent look */
+.flex-item img {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.flex-item img:hover {
+    transform: scale(1.02);
+}
+
+/* Specific delay for the 4th team member if you keep the animation */
+.flex-container:nth-of-type(4) {
+    animation-delay: 0.9s;
+}
+
+/* Mobile adjustments */
+@media (max-width: 900px) {
+    .flex-item:first-child {
+        order: 2; /* Puts text below image on mobile */
+    }
+    .flex-item:last-child {
+        order: 1; /* Puts image on top on mobile */
+        margin-bottom: 20px;
+    }
+}
