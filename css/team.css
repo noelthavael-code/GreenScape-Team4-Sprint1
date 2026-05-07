@@ -4,6 +4,7 @@
     align-items: center; /* Centers text vertically against the profile images */
 }
 
+
 .area-header {
     color: #2e7d32;
     border-bottom: 2px solid #558b2f;
@@ -13,7 +14,7 @@
 
 /* Ensure the images have a consistent look */
 .flex-item img {
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 15px rgba(0, 20, 16, 0.15);
     transition: transform 0.3s ease;
 }
 
@@ -36,3 +37,4 @@
         margin-bottom: 20px;
     }
 }
+
