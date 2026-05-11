@@ -20,6 +20,7 @@ div.flex-container {
     flex-direction: row;
     padding: 10px;
     gap: 5px;
+    max-width: 100%;
 }
 .divimgs{
     border: 2px solid #3fbe7f;
@@ -32,11 +33,15 @@ div.textbox{
     padding: 15px;
 }
 .reviews{
-    border-radius: 15px;
+    border-radius: 4px;
+    max-width: 100%;
     background-color: white;
     margin: auto;
     padding:4px;
     box-shadow: 20px 20px 50px 2px #10301d;
+}
+.reviews span{
+    font-size: 25px;
 }
 .flex-container img{
     max-width: 100%;
@@ -47,3 +52,49 @@ div.textbox{
     background-color: #25b425;
     border-radius: 15px;
 }
+.rev{
+    display: flex;
+    align-items: flex-start;
+}
+.big {
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1;
+  margin-right: 6px;
+}
+.small {
+  display: flex;
+  flex-direction: column;
+  font-size: 48px;
+  line-height: 1.1;
+  margin-top: 4px;
+}
+
+.ratings {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin:5px;
+
+}
+
+.bar {
+  height: 28px;
+  width:100%;
+  background: #838383;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: #1fb25c;
+}
+
+.w80 { width: 80%; }
+.w20 { width: 20%; }
+.w12 { width: 12%; }
+.w3  { width: 3%; }
+.w8  { width: 8%; }
+
