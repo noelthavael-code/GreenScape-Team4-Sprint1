@@ -34,10 +34,11 @@ div.textbox{
 }
 .reviews{
     border-radius: 4px;
+    width:400px;
     max-width: 100%;
     background-color: white;
-    margin: auto;
-    padding:4px;
+    margin:auto;
+    padding:2px;
     box-shadow: 20px 20px 50px 2px #10301d;
 }
 .reviews span{
@@ -75,8 +76,7 @@ div.textbox{
   display: flex;
   flex-direction: column;
   gap: 4px;
-  margin:5px;
-
+  margin-left:20px;
 }
 
 .bar {
