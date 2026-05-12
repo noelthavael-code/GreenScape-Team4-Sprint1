@@ -6,39 +6,43 @@
     <title>Icon-Left Responsive Menu</title>
     <link rel="stylesheet" href="/css/menu.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/review.css">
 </head>
 <body>
     <header class="navbar-container">
         <nav class="navbar">
             <div class="navbar-brand">
-                <a href="/index.html"><img id="logo" src="img/greenscapelogo_nottransparent.png"></a> 
+                <a href="index4.html"><img id="logo1" src="img/team4-green2.png"></a> 
                 </div>
 
-            <input type="checkbox" id="menu-toggle">
-            
-            <label for="menu-toggle" class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </label>
-
-            <ul class="nav-links">
-                <li><a href="/index.html">Home</a></li>
-                
-                <li class="dropdown" id="csharp-dropdown">
-                    <a href="#csharp">Services</a>
+                <input type="checkbox" id="menu-toggle">
+                <label class="hamburger" for="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+                <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown" id="javascript-dropdown">
+                    <label class="dropdown">Services ▾</label>
                     <ul class="submenu">
-                        <li><a href="/landscape_maintenance.html">Landscape Maintenance</a></li>
-                        <li><a href="/treatments.html">Treatments</a></li>
-                        <li><a href="/aeration-seeding.html">Aeration and Seeding</a></li>
+                        <li><a href="aeration-seeding.html">Aeration & Seeding</a></li>
+                        <li><a href="landscape_maintenance.html">Landscape Maintenance</a></li>
+                        <li><a href="treatments.html">treatments</a></li>
                     </ul>
                 </li>
                 
-                <li><a href="/review.html">Reviews</a></li>
-                <li><a href="/team.html">Our Team</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="team.html">Our Team</a></li>
 
-                <li class="button"><a href="#javascript">Request a Quote</a></li>
-            </ul>
+                <li class="dropdown" id="javascript-dropdown">
+                    <a href="#javascript">Request A Quote ▾</a>
+                    <ul class="submenu">
+                        <li><a href="#js-frontend">Front End</a></li>
+                        <li><a href="#js-backend">Back End</a></li>
+                    </ul>
+                </li>
+            </div>
         </nav>
     </header>
 
