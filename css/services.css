@@ -9,7 +9,7 @@ body {
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /* Cleaner font */
     color: #1a1a1a;
     line-height: 1.6;
-    padding: 20px;
+    
 }
 
 .main-container {
@@ -20,6 +20,7 @@ body {
     width: 100%;
     max-width: 1800px;   /* Adjusted for better readability */
     margin: 0 auto;      /* Centers the entire container on the page */
+    padding: 20px;
 }
 
 /* 4. Responsive Textbox */
