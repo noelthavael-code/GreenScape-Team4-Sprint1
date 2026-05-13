@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #587a58;
+    background-color: #74c69d;
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /* Cleaner font */
     color: #1a1a1a;
     line-height: 1.6;
@@ -20,7 +20,6 @@ body {
     width: 100%;
     max-width: 1800px;   /* Adjusted for better readability */
     margin: 0 auto;      /* Centers the entire container on the page */
-    padding: 20px;
 }
 
 /* 4. Responsive Textbox */
@@ -121,15 +120,7 @@ h1 {
 }
 
 /* 1. The main footer background (stretches full width) */
-.site-footer {
-    background-color: #e2e8d0; 
-    width: 100%;
-    display: flex;
-    justify-content: center; /* This centers the container inside */
-    padding: 40px 0;
-    margin-top: 60px;
-    border-top: 1px solid rgba(0,0,0,0.1);
-}
+
 
 /* 2. The inner container (controls the width of your text columns) */
 .footer-container {
@@ -138,7 +129,7 @@ h1 {
     display: flex;
     justify-content: space-between; /* Pushes columns apart to fill the 1200px */
     align-items: flex-start;
-    gap: 30px;
+    gap: 20px;
 }
 
 /* 3. Column styling to ensure they take up equal space */
@@ -167,6 +158,10 @@ h1 {
     }
     
     .footer-column {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
+}
+
+html, body {
+    overflow-x: hidden;
 }

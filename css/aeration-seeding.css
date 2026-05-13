@@ -126,7 +126,7 @@ input { padding: 12px; background: #eee; border: none; }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #000;
     margin: 0;
     padding: 0;
 }
@@ -171,7 +171,7 @@ body {
 .area-header {
     font-size: 1.65rem;
     font-weight: bold;
-    color: #000;
+    color: #333;
     margin-bottom: 15px;
     border-bottom: 2px;
     padding-bottom: 5px;
@@ -256,4 +256,43 @@ body {
 
 .flex-container:nth-of-type(3) {
     animation-delay: 0.7s;
+}
+
+
+
+.flex-container {
+    align-items: center; /* Centers text vertically against the profile images */
+}
+
+.area-header {
+    color: #2e7d32;
+    border-bottom: 2px solid #558b2f;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Ensure the images have a consistent look */
+.flex-item img {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.flex-item img:hover {
+    transform: scale(1.02);
+}
+
+/* Specific delay for the 4th team member if you keep the animation */
+.flex-container:nth-of-type(4) {
+    animation-delay: 0.9s;
+}
+
+/* Mobile adjustments */
+@media (max-width: 900px) {
+    .flex-item:first-child {
+        order: 2; /* Puts text below image on mobile */
+    }
+    .flex-item:last-child {
+        order: 1; /* Puts image on top on mobile */
+        margin-bottom: 20px;
+    }
 }
