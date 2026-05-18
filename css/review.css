@@ -1,3 +1,7 @@
+
+
+
+
 div.flex-container {
     display: flex;
     align-content: center;
@@ -62,7 +66,3 @@ div.flex-container {
 .w12 { width: 12%; }
 .w3  { width: 3%; }
 .w8  { width: 2%; }
-
-
-
-
